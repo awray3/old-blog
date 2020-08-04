@@ -1,0 +1,49 @@
+body{
+    background-color: aliceblue;
+    margin: 50px;
+    margin-top: 25px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+header {
+    background-color: whitesmoke;
+    padding-left: 70px;
+    padding-right: auto;
+    margin: 5px;
+/*    text-align: center;*/
+    border-style: ridge;
+    border-color:cadetblue;
+/*    float: center;*/
+/*    width=500px;*/
+}
+
+nav, section{
+/*    float:left;*/
+/*    word-spacing:200pt;*/
+    border-style: ridge;
+    border-color:cadetblue;
+    background-color:whitesmoke;
+    padding: 25px;
+/*    padding-bottom:50px;*/
+    margin: 5px;
+    font-size:13pt;
+}
+
+#selected{
+    border-style:solid;
+    padding-left:20pt;
+    padding-right:20pt;
+    background-color:lightcyan;
+    border-radius:10px;
+}
+
+a:link, a:visited{
+    color: darkred;
+    text-decoration: none;
+}
+
+#tableentry{
+    padding-left:20pt;
+    padding-right:20pt;
+}
