@@ -1,18 +1,103 @@
-{% extends 'layout.html' %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    
+    <head> 
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    
+    <title>Andrew Wray</title>
+    
+    </head>
+    
+    
+    
+    
+    
+    
+    
+    <body>
+        <span style="font-weight: bold;"></span>
 
 
-{% block breadcrumbs %}
-    <ul id="breadcrumbs">
-        <li>Blog</li>
-    </ul>
-{% endblock %}
+        <header style="font-size:13pt">
+      <table>
+            <tr> 
+                <td style="width:100%">
+                    <h2> Andrew Wray, PhD</h2>
+                    <p>
+		    <a href="https://github.com/awray3" style="color: black">
+			<i style="font-size:24px" class="fa">&#xf09b;</i>
+		    </a>
+		    <a href="https://www.linkedin.com/in/a-wray3/"
+			    style="color: black">
+			<i style="font-size:24px" class="fa">&#xf08c;</i>
+		    </a>
+                    </p>
+                </td>
+                
+                <td style="width:100%;"></td>
+                
+                <td><img src="Prof_Pic.jpg" style="width:350px;height:230px">
+                </td>
+            </tr>
+        </table>
+                
+                
+                
+        </header>
 
-{% block content %}
-    <div class="post-list">
-        {% for post in posts %}
-            <h1 class="post-title"><a href="{{ get_url(post.url) }}">{{ post.title }}</a></h1>
-            <h2 class="post-meta">{{ post.date }}{% if post.tags %} <span>»</span> {% for tag in post.tags %}<a href="{{ get_url(posts.tags[tag].url) }}">{{ tag }}</a>{% if not loop.last %}, {% endif %}{% endfor %}{% endif %}</h2>
-        {% endfor %}
-    </div>
-{% endblock %}
+        <nav>
+ <table>
+    <tr>
+        <td id="selected">
+            <a href="index.html">Home</a>
+        </td>
+    
+        <td id="tableentry">
+            <a href="teaching.html">Teaching</a> 
+        </td>
+    
+   
+        <td id="tableentry">    
+            <a href="research.html">Research</a>
+        </td>
+   
+    </tr>
+</table>
+</nav>        
 
+
+        
+
+        <section>
+        
+            <h3>
+                About
+            </h3>
+            <p style="font-size:13pt">
+	    	I am a mathematician and data scientist interested in machine
+		learning, Bayesian statistics, and functional programming. In my spare
+		time I like explore applications of AI to music and audio.
+            </p>
+
+	    <h3> Projects </h3>
+
+            <p style="font-size:13pt">
+	    <ul>
+		<li><a href="https://music-clf.herokuapp.com">Music Genre Classification</a>
+		<br>
+		<li><a href="projects/top_albums.html"> Albums of the decade, 2010-2019 </a> 
+		<br>
+		<li><a href="https://github.com/awray3/league_of_legends">League
+				of Legends 10-Minute Game Analysis</a>
+	</ul>
+
+	    </p>
+        </section>        
+
+
+        
+        
+    </body>
+</html>
