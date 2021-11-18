@@ -1,0 +1,3 @@
+[submodule "themes/simple-bootstrap"]
+	path = themes/simple-bootstrap
+	url = git@github.com:awray3/simple-bootstrap.git
