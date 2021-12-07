@@ -43,7 +43,7 @@ RELATIVE_URLS = True
 # PATH-RELATED
 PATH = "content"
 ARTICLE_PATHS = ["blog"]
-STATIC_PATHS = ["images", "pdfs"]
+STATIC_PATHS = ["images", "pdfs", "gifs"]
 ARTICLE_EXCLUDES = ["extras/top_albums.html"]
 EXTRA_PATH_METADATA = {"extra/top_albums.html": {"path": "top_albums.html"}}
 
