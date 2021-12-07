@@ -1,5 +1,5 @@
 Title: Use Comments in Your Terminal
-Date: 2021-12-05
+Date: 2021-12-06
 Tags: command-line
 Summary: You can use comments to leave yourself notes in your terminal.
 
