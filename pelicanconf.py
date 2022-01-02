@@ -41,6 +41,7 @@ RELATIVE_URLS = True
 
 # PATH-RELATED
 PATH = "content"
+OUTPUT_PATH = "docs"
 ARTICLE_PATHS = ["blog"]
 STATIC_PATHS = ["images", "pdfs", "gifs", "extra"]
 ARTICLE_EXCLUDES = ["extras/top_albums.html"]
@@ -48,7 +49,7 @@ EXTRA_PATH_METADATA = {
     "extra/top_albums.html": {"path": "top_albums.html"},
     "extra/favicon.ico": {"path": "favicon.ico"},
 }
-PLUGIN_PATHS = ["./plugins"]
+# PLUGIN_PATHS = ["./plugins"]
 PLUGINS = ["render_math"]
 
 THEME = "themes/simple-bootstrap"
