@@ -8,7 +8,6 @@ SITEURL = ""
 # MAIN_MENU = True
 
 
-
 TIMEZONE = "America/Los_Angeles"
 
 DEFAULT_LANG = "en"
@@ -43,11 +42,14 @@ RELATIVE_URLS = True
 # PATH-RELATED
 PATH = "content"
 ARTICLE_PATHS = ["blog"]
-STATIC_PATHS = ["images", "pdfs", "gifs"]
+STATIC_PATHS = ["images", "pdfs", "gifs", "extra"]
 ARTICLE_EXCLUDES = ["extras/top_albums.html"]
-EXTRA_PATH_METADATA = {"extra/top_albums.html": {"path": "top_albums.html"}}
-PLUGIN_PATHS=['./plugins']
-PLUGINS=['render_math']
+EXTRA_PATH_METADATA = {
+    "extra/top_albums.html": {"path": "top_albums.html"},
+    "extra/favicon.ico": {"path": "favicon.ico"},
+}
+PLUGIN_PATHS = ["./plugins"]
+PLUGINS = ["render_math"]
 
 THEME = "themes/simple-bootstrap"
 AVATAR = "images/Prof_Pic.png"
