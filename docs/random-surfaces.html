@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Random Surfaces - Andrew's Blog</title>
+        <meta charset="utf-8" />
+        <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="./theme/static/css/style.css" rel="stylesheet" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    </head>
+
+    <body id="index" class="archive">
+        <div class="container">
+            <div class="header">
+                <ul class="nav nav-pills pull-right">
+                    <li class=""><a href=".">Home</a></li>
+                    <li><a href="./pages/about.html">About</a></li>
+                    <li><a href="./pages/research.html">Research</a></li>
+                    <li><a href="./archives.html">Archives</a></li>
+                </ul>
+                <h3 class="text-muted"><a href=".">Andrew's Blog</a></h3>
+				<h2 class="text-muted"></h2>
+             </div>
+<section id="content" class="article content">
+  <header>
+    <h2 class="entry-title">
+      <a href="./random-surfaces.html" rel="bookmark"
+         title="Permalink to Random Surfaces">Random Surfaces</a></h2>
+ 
+  </header>
+  
+     
+  <div class="entry-content">
+    <p>Random surfaces lie at the intersection of many interesting areas of study: probability,
+geometry, functional analysis, and an area of theoretical physics known as
+<em>Liouville Quantum Gravity</em>. 
+If you're interested in starting to dig into this subject, here are some places to start,
+at various levels of technicality:</p>
+<ul>
+<li>This <a href="https://www.quantamagazine.org/mathematicians-prove-2d-version-of-quantum-gravity-really-works-20210617/">Quanta article</a>
+is how I first found out about this subject.</li>
+<li>This <a href="https://arxiv.org/abs/1908.05573">expository arXiv paper</a> by Ewain Gwynne is a
+wonderful tour through the core of the subject of random surfaces at a bird's-eye view,
+and it contains references to papers and texts which go into more detail.</li>
+<li>This series of three groundbreaking papers, which are the subject of the article above:<ol>
+<li><a href="https://arxiv.org/abs/1410.7318">Liouville Quantum Gravity on the Riemann sphere</a>, 2014</li>
+<li><a href="https://arxiv.org/abs/1707.08785">Integrability of Liouville theory: proof of the DOZZ Formula</a>, 2017</li>
+<li><a href="https://arxiv.org/abs/2005.11530">Conformal bootstrap in Liouville Theory</a>, 2020</li>
+</ol>
+</li>
+</ul>
+<p>The main interesting thing about these papers is they give a mathematically-sound
+construction of the Feynmann path integral in a 2D quantum field theory known as <em>Liouville Field Theory</em>.
+The original physics covered in these papers was carried out in the early 80's,
+but the novel thing is that this could be made mathematically rigorous. The Feynmann path
+integral has always been a mythical thing to mathematicians, and there have been numerous
+attempts at making it rigorous, though none seem to do it justice. (There could probably be a whole post just on those!)
+I have not read through the papers in (3) above, but they are fun to glance through to
+appreciate how complicated this stuff is.</p>
+<p>Talking in general about how unexpected it might seem that the Gaussian Free Field even
+exists. It's a random variable valued in the space <span class="math">\(H^1(D)\)</span> where <span class="math">\(D \subset \mathbb{C}\)</span>
+is the unit disk in the complex plane, and <span class="math">\(H^1\)</span> is the space of <em>Sobolev functions</em>. More
+on them later.</p>
+<script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width < 768) ? "left" : align;
+        indent = (screen.width < 768) ? "0em" : indent;
+        linebreak = (screen.width < 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/latest.js?config=TeX-AMS-MML_HTMLorMML';
+
+    var configscript = document.createElement('script');
+    configscript.type = 'text/x-mathjax-config';
+    configscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'none' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        availableFonts: ['STIX', 'TeX']," +
+        "        preferredFont: 'STIX'," +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+</script>
+  </div><!-- /.entry-content -->
+   <footer class="post-info text-muted">
+    Posted on <abbr class="published" title="2022-01-01T00:00:00-08:00">
+      Sat 01 January 2022
+    </abbr>
+    <address class="vcard author">
+      by <a class="url fn" href="./author/andrew-wray.html">Andrew Wray</a>
+    </address> in <a href="./category/blog.html">blog</a> Tagged   </footer><!-- /.post-info -->
+</section>
+            <footer id="contentinfo" class="footer">
+                    <nav class="pull-right bottom-nav">
+                        <a href="/None">RSS</a>
+                    </nav>
+                    <address id="about" class="vcard body">
+                    &copy; <a href=".">Andrew's Blog</a> Proudly powered by <a href="http://getpelican.com/">Pelican</a>
+                    </address><!-- /#about -->
+            </footer><!-- /#contentinfo -->
+        </div><!-- container -->
+    </body>
+</html>
