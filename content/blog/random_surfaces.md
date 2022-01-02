@@ -1,6 +1,7 @@
 Title: Random Surfaces
 Date: 2022-01-01
 Summary: Meandering through the world of random surfaces.
+Status: draft
 
 Random surfaces lie at the intersection of many interesting areas of study: probability,
 geometry, functional analysis, and an area of theoretical physics known as
@@ -29,7 +30,6 @@ appreciate how complicated this stuff is.
 
 
 
-Talking in general about how unexpected it might seem that the Gaussian Free Field even
-exists. It's a random variable valued in the space $H^1(D)$ where $D \subset \mathbb{C}$
+It is unexpected that the Gaussian Free Field even exists. It's a random variable valued in the space $H^1(D)$ where $D \subset \mathbb{C}$
 is the unit disk in the complex plane, and $H^1$ is the space of _Sobolev functions_. More
 on them later.
