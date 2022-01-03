@@ -41,86 +41,35 @@ is how I first found out about this subject.</li>
 <li>This <a href="https://arxiv.org/abs/1908.05573">expository arXiv paper</a> by Ewain Gwynne is a
 wonderful tour through the core of the subject of random surfaces at a bird's-eye view,
 and it contains references to papers and texts which go into more detail.</li>
-<li>This series of three groundbreaking papers, which are the subject of the article above:<ol>
+<li>This series of three groundbreaking papers<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>, which are the subject of the article above:<ol>
 <li><a href="https://arxiv.org/abs/1410.7318">Liouville Quantum Gravity on the Riemann sphere</a>, 2014</li>
 <li><a href="https://arxiv.org/abs/1707.08785">Integrability of Liouville theory: proof of the DOZZ Formula</a>, 2017</li>
 <li><a href="https://arxiv.org/abs/2005.11530">Conformal bootstrap in Liouville Theory</a>, 2020</li>
 </ol>
 </li>
 </ul>
-<p>The main interesting thing about these papers is they give a mathematically-sound
+<p>One interesting thing about these papers is they give a mathematically-sound
 construction of the Feynmann path integral in a 2D quantum field theory known as <em>Liouville Field Theory</em>.
 The original physics covered in these papers was carried out in the early 80's,
 but the novel thing is that this could be made mathematically rigorous. The Feynmann path
 integral has always been a mythical thing to mathematicians, and there have been numerous
-attempts at making it rigorous, though none seem to do it justice. (There could probably be a whole post just on those!)
-I have not read through the papers in (3) above, but they are fun to glance through to
-appreciate how complicated this stuff is.</p>
-<p>It is unexpected that the Gaussian Free Field even exists. It's a random variable valued in the space <span class="math">\(H^1(D)\)</span> where <span class="math">\(D \subset \mathbb{C}\)</span>
-is the unit disk in the complex plane, and <span class="math">\(H^1\)</span> is the space of <em>Sobolev functions</em>. More
-on them later.</p>
-<script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
-    var align = "center",
-        indent = "0em",
-        linebreak = "false";
+attempts at making it rigorous, though none seem to do it justice. (There could probably be a whole post just on those!)</p>
+<p>In reading through these sources I learned about the idea of a <em>random surface</em>, which is the topic of this post. To explain,
+I'll follow Gwynne and first discuss what a <em>random curve</em> is.</p>
+<h1>Random Curves</h1>
+<p>What is a random curve? What makes a curve "random?"</p>
+<!-- It is unexpected that the Gaussian Free Field even exists. It's a random variable valued in the space $H^1(D)$ where $D \subset \mathbb{C}$ -->
+<!-- is the unit disk in the complex plane, and $H^1$ is the space of _Sobolev functions_. More -->
+<!-- on them later. -->
 
-    if (false) {
-        align = (screen.width < 768) ? "left" : align;
-        indent = (screen.width < 768) ? "0em" : indent;
-        linebreak = (screen.width < 768) ? 'true' : linebreak;
-    }
-
-    var mathjaxscript = document.createElement('script');
-    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
-    mathjaxscript.type = 'text/javascript';
-    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/latest.js?config=TeX-AMS-MML_HTMLorMML';
-
-    var configscript = document.createElement('script');
-    configscript.type = 'text/x-mathjax-config';
-    configscript[(window.opera ? "innerHTML" : "text")] =
-        "MathJax.Hub.Config({" +
-        "    config: ['MMLorHTML.js']," +
-        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'none' } }," +
-        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
-        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
-        "    displayAlign: '"+ align +"'," +
-        "    displayIndent: '"+ indent +"'," +
-        "    showMathMenu: true," +
-        "    messageStyle: 'normal'," +
-        "    tex2jax: { " +
-        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
-        "        displayMath: [ ['$$','$$'] ]," +
-        "        processEscapes: true," +
-        "        preview: 'TeX'," +
-        "    }, " +
-        "    'HTML-CSS': { " +
-        "        availableFonts: ['STIX', 'TeX']," +
-        "        preferredFont: 'STIX'," +
-        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
-        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
-        "    }, " +
-        "}); " +
-        "if ('default' !== 'default') {" +
-            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
-                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
-                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
-                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
-                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
-                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
-            "});" +
-            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
-                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
-                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
-                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
-                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
-                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
-            "});" +
-        "}";
-
-    (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
-    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
-}
-</script>
+<div class="footnote">
+<hr>
+<ol>
+<li id="fn:1">
+<p>I have not read the last three papers in any detail; though they are fun to glance through to get a feel for the work they did.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
   </div><!-- /.entry-content -->
    <footer class="post-info text-muted">
     Posted on <abbr class="published" title="2022-01-01T00:00:00-08:00">
