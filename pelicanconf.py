@@ -41,7 +41,6 @@ RELATIVE_URLS = True
 
 # PATH-RELATED
 PATH = "content"
-OUTPUT_PATH = "docs"
 ARTICLE_PATHS = ["blog"]
 STATIC_PATHS = ["images", "pdfs", "gifs", "extra"]
 ARTICLE_EXCLUDES = ["extras/top_albums.html"]
@@ -54,3 +53,7 @@ PLUGINS = ["render_math"]
 
 THEME = "themes/simple-bootstrap"
 AVATAR = "images/Prof_Pic.png"
+
+# Output Settings
+OUTPUT_RETENTION = [".git", ".gitkeep"]
+OUTPUT_PATH = "docs"
