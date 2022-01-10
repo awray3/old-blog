@@ -30,7 +30,8 @@
   
      
   <div class="entry-content">
-    <p>Random surfaces lie at the intersection of many interesting areas of study: probability,
+    <h1>Random Surfaces</h1>
+<p>Random surfaces lie at the intersection of many interesting areas of study: probability,
 geometry, functional analysis, and an area of theoretical physics known as
 <em>Liouville Quantum Gravity</em>. 
 If you're interested in starting to dig into this subject, here are some places to start,
@@ -57,7 +58,15 @@ attempts at making it rigorous, though none seem to do it justice. (There could 
 <p>In reading through these sources I learned about the idea of a <em>random surface</em>, which is the topic of this post. To explain,
 I'll follow Gwynne and first discuss what a <em>random curve</em> is.</p>
 <h1>Random Curves</h1>
-<p>What is a random curve? What makes a curve "random?"</p>
+<p>Let's start with thinking about random curves. What makes a curve "random?" What do we even mean by curve?
+There are a lot of questions to make sense of here. Let's start with a nice looking curve:</p>
+<p>[nice looking picture of curve here]</p>
+<p>One option is to take every point on that curve and wiggle it "randomly." You might expect it look sort-of like
+this:</p>
+<p>[Same curve with some noise added to it]</p>
+<p>You might describe this as a "noisy smooth curve." </p>
+<p>Mathematically, a random curve can be constructed as a limit of random walks in the lattice
+<span class="math">\(ℤ^d ⊂ ℝ^d\)</span>, so let's start by describing that.</p>
 <!-- It is unexpected that the Gaussian Free Field even exists. It's a random variable valued in the space $H^1(D)$ where $D \subset \mathbb{C}$ -->
 <!-- is the unit disk in the complex plane, and $H^1$ is the space of _Sobolev functions_. More -->
 <!-- on them later. -->
@@ -70,6 +79,68 @@ I'll follow Gwynne and first discuss what a <em>random curve</em> is.</p>
 </li>
 </ol>
 </div>
+<script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width < 768) ? "left" : align;
+        indent = (screen.width < 768) ? "0em" : indent;
+        linebreak = (screen.width < 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/latest.js?config=TeX-AMS-MML_HTMLorMML';
+
+    var configscript = document.createElement('script');
+    configscript.type = 'text/x-mathjax-config';
+    configscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'none' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        availableFonts: ['STIX', 'TeX']," +
+        "        preferredFont: 'STIX'," +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+</script>
   </div><!-- /.entry-content -->
    <footer class="post-info text-muted">
     Posted on <abbr class="published" title="2022-01-01T00:00:00-08:00">

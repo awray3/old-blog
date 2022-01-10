@@ -45,10 +45,21 @@ this:
 
 [Same curve with some noise added to it]
 
-You might describe this as a "noisy smooth curve." 
+You might conceptualize this like a "noisy smooth curve."[^2] How can such a
+thing be mathematically defined? One approach is via a limit of random walks in the lattice $ℤ^d ⊂ ℝ^d$, so let's start by describing that.
 
-Mathematically, a random curve can be constructed as a limit of random walks in the lattice
-$ℤ^d ⊂ ℝ^d$, so let's start by describing that.
+## Random walks on the lattice
+
+Informally, if we're picturing our random "noisy" curve in space, we might try looking at it under a discretization.
+Thinking of the lattice $ℤ^d$ as the discretization of $ℝ^d$, imagine we discretize the random curve by sampling it at a finite number of places and "clamping" those points on the curve to the nearest lattice point. What we would see from the point of view of the lattice is a bunch of elements $S_1, S_2, ..., S_n, ... ∈ ℤ^d$ of the lattice jumping from one lattice point to the next. In other words, we would see something that resembled a random walk.
+
+The random walk by definition is a sequence $(S_n)_{n ∈ ℕ}$ in $ℤ^d$ starting from the origin in $ℤ^d$, where $S_n$ is obtained by rolling a $2^{d}$-sided dice and moving one unit in the corresponding direction on the lattice $ℤ^d$ from $S_{n-1}$.[^dice]
+For example, when $d=2$ and we're walking around the lattice $ℤ^2$ in the plane,
+
+
+As we roll and roll the dice, moving along in space, the random walk traverses through the lattice. 
+
+
 
 
 
@@ -59,3 +70,7 @@ $ℤ^d ⊂ ℝ^d$, so let's start by describing that.
 
 
 [^1]: I have not read the last three papers in any detail; though they are fun to glance through to get a feel for the work they did.
+
+[^2]: Question for later: are random curves always describable as a smooth curve + random noise?
+
+[^dice]: The dice in this rolling process are independent identically-distributed uniform random variables on the faces of the dice.
